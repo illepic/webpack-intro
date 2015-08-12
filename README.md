@@ -1,3 +1,5 @@
+![webpack](http://webpack.github.io/assets/logo.png)
+
 # webpack-intro
 
 Simple files to demo Webpack alongside https://slides.com/illepic/webpack
