@@ -1,2 +1,4 @@
 # webpack-intro
-Simple files to go alongside presentation
+
+Simple files to demo Webpack alongside https://slides.com/illepic/webpack
+
