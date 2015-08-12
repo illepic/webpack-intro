@@ -13,4 +13,4 @@ module.exports = {
 	plugins: [
 		new CommonsChunkPlugin("commons.js")
 	]
-}
+};
