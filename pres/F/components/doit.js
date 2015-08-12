@@ -1,5 +1,5 @@
 var $ = require('jquery');
-require('./doit.css');
+require('./doit.scss');
 
 module.exports = {
   labeoufFlex: function() {
