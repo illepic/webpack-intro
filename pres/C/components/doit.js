@@ -1,6 +1,6 @@
-var $ = require('jquery');
+const $ = require('jquery');
 
-module.exports = {
+export default {
   labeoufFlex: function() {
     $(document).ready(function() {
       $('#doit').click(function() {
