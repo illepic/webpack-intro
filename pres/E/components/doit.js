@@ -1,11 +1,11 @@
-var $ = require('jquery');
-require('./doit.scss');
+import $ from 'jquery';
+import './doit.scss';
 
-module.exports = {
-  labeoufFlex: function() {
-    $(document).ready(function() {
-      $('#doit').click(function() {
-        alert("DON'T LET YOUR DREAMS BE DREAMS");
+export default {
+  labeoufFlex() {
+    $(document).ready(() => {
+      $('#doit').click(() => {
+        alert("DON'T LET YOUR DREAMS BE DREAMS. DO IT.");
       });
     });
   }

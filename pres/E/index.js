@@ -1,2 +1,2 @@
-var Shia = require('./components/doit');
+import Shia from './components/doit';
 Shia.labeoufFlex();

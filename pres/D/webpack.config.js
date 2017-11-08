@@ -6,18 +6,13 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname),
   },
-  // module: {
-  //   loaders: [
-  //     { test: /\.css$/, loader: "style-loader!css-loader" }
-  //   ]
-  // },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader', },
-          { loader: 'css-loader', }
+          { loader: 'style-loader' },
+          { loader: 'css-loader' }
         ]
       },
       {
