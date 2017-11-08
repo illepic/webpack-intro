@@ -1,4 +1,5 @@
-var common = require("./common");
-require(["./shared"], function(shared) {
-	shared("This is page A");
-});
+import $ from 'jquery';
+import somelib from './components/someLib';
+import shared from './components/shared';
+
+console.log('This is page A');

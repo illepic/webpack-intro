@@ -1,9 +1,10 @@
-var path = require("path");
-var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
+const path = require('path');
+const webpack = require('webpack');
+
 module.exports = {
 	entry: {
-		pageA: "./pageA",
-		pageB: "./pageB"
+		pageA: path.resolve(__dirname, 'pageA'),
+		pageB: path.resolve(__dirname, 'pageB'),
 	},
 	output: {
 		path: path.join(__dirname, "js"),
@@ -11,6 +12,9 @@ module.exports = {
 		chunkFilename: "[id].chunk.js"
 	},
 	plugins: [
-		new CommonsChunkPlugin("commons.js")
+		new webpack.optimize.CommonsChunkPlugin({
+      name: 'commons',
+      minChunks: 2,
+    }),
 	]
 };

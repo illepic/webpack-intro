@@ -1,5 +1,6 @@
-var common = require("./common");
-require.ensure(["./shared"], function(require) {
-	var shared = require("./shared");
-	shared("This is page B");
-});
+import $ from 'jquery';
+import _ from 'lodash';
+
+import someLib from './components/someLib';
+
+console.log(`This is from page b: ${someLib}`);
