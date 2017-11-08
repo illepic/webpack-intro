@@ -1,9 +1,9 @@
-const $ = require('jquery');
+import $ from 'jquery';
 
 export default {
-  labeoufFlex: function() {
-    $(document).ready(function() {
-      $('#doit').click(function() {
+  labeoufFlex() {
+    $(document).ready(() => {
+      $('#doit').click(() => {
         alert("DON'T LET YOUR DREAMS BE DREAMS. DO IT.");
       });
     });

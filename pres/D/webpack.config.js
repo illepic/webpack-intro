@@ -1,12 +1,35 @@
+const path = require('path');
+
 module.exports = {
-  entry: './index.js',
+  entry: path.resolve(__dirname, 'index.js'),
   output: {
     filename: 'bundle.js',
-    path: __dirname
+    path: path.resolve(__dirname),
   },
+  // module: {
+  //   loaders: [
+  //     { test: /\.css$/, loader: "style-loader!css-loader" }
+  //   ]
+  // },
   module: {
-    loaders: [
-      { test: /\.css$/, loader: "style-loader!css-loader" }
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader', },
+          { loader: 'css-loader', }
+        ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
     ]
   }
 };
