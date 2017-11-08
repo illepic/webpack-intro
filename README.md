@@ -6,7 +6,7 @@ Simple files to demo Webpack alongside https://slides.com/illepic/webpack
 
 ## Usage
 
-During presentation, slides that feature webpack code have a corresponding folder inside . (A, B, C, etc). Within each folder, run the corresponding command:
+During presentation, slides that feature webpack code have a corresponding folder inside . (A, B, C, etc). From anywhere in the project, run the corresponding command:
 
 - A: `npm run webpack -- --config ./A/webpack.config.js`
 - B: `npm run webpack -- --config ./B/webpack.config.js`
@@ -15,3 +15,5 @@ During presentation, slides that feature webpack code have a corresponding folde
 - E: `npm run webpack -- --config ./E/webpack.config.js`
 - F: `npm run wds -- --config ./F/webpack.config.js`
 - G: `npm run webpack -- --config ./G/webpack.config.js`
+
+(Webpack determines path of config files relative to package.json!)
