@@ -6,7 +6,7 @@
   "scripts": {
     "test": "",
     "webpack": "webpack",
-    "start": "webpack-dev-server"
+    "wds": "webpack-dev-server"
   },
   "author": "Christopher Bloom",
   "license": "ISC",
