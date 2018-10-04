@@ -2,12 +2,8 @@
   "name": "webpack-demo",
   "version": "1.0.0",
   "description": "",
+  "private": true,
   "main": "index.js",
-  "scripts": {
-    "test": "",
-    "webpack": "webpack",
-    "wds": "webpack-dev-server"
-  },
   "author": "Christopher Bloom",
   "license": "ISC",
   "devDependencies": {
@@ -19,6 +15,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
